@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student register</title>
+</head>
+<body>
+    <h1>Student registration</h1>
+    <div class="container">
+    <form action="#">
+        <label for="FUll Name">Name of the student</label>
+        <input type="text" placeholder="Enter the name of the student" required> <br>
+        <label for="Age">Age</label>
+        <input type="text" required> <br>
+        <label for="department">Department</label> 
+        <select name="department" id="department" required>
+            <option value="option">other</option>
+            <option value="Ai&ds">Artificial Intelligence and data science</option>
+            <option value="cse">Computer Science enginnering</option>
+            <option value="FT">FAshion technology</option>
+            <option value="mech">Mechanical enginnering</option>
+          </select> <br>
+        <label for="semester">Semester</label> 
+        <input type="number" placeholder="current semester of the student" required> <br>
+        <label for="year">Year of studying</label> 
+        <input type="number" placeholder="year from and to" required> <br> <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<style>
+    h1{
+        font-size: 70px;
+        text-align: center;
+    }
+    .container{
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        top: 60px;
+    }
+
+    input{
+        height:30px;
+        width: 30%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    select{
+        height: 30px;
+        width: 30%;
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
+</body>
+</html>

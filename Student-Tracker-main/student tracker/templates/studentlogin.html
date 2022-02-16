@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <title>Student Login</title>
+
+<style>
+
+body{
+  background: #70e1f5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+	.img1{
+		width: 100%;
+	}
+
+
+	form {
+		border: 3px solid #f1f1f1;
+	}
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+
+	h2{
+		text-align: center;
+		margin: 8px ;
+		color: black;
+		font-size: 30px;
+	}
+
+	.btn1{
+		color: black;
+	}
+
+	button:hover {
+		opacity: 0.8;
+	}
+
+	.cancelbtn {
+		width: auto;
+		padding: 10px 18px;
+		background-color: #f44336;
+	}
+
+	.imgcontainer {
+		text-align: center;
+		margin: 10px 0 12px 0;
+		padding: -10%px
+	}
+       .container {
+		padding: 0px;
+		margin: 6px;
+	}
+	span.psw {
+		float: right;
+		padding-top: 16px;
+	}
+	@media screen and (max-width: 300px) {
+		span.psw {
+			display: block;
+			float: none;
+		}
+
+	}
+
+</style>
+
+<body>
+	<h2>Student Login</h2>
+
+	<form action="/action_page.php">
+
+		<div class="imgcontainer">
+			<img src={{url_for('static', filename = 'images/student.jpg' )}} >
+		</div>
+
+		<div class="container">
+			<label><b>Reg / Roll no:</b></label>
+			<input type="text" style="color: black;" placeholder="Enter the Reg / Roll no" name="uname" required>
+
+			<label><b>Password:</b></label>
+			<input type="password" placeholder="Enter the Password" name="psw" required>
+
+			<a class="btn1" href="/studreg" type="button">Login</a>
+		</div>
+
+
+	</form>
+	
+</body>
+
+</html>
